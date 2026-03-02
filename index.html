@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Portfolio</title>
+  <!-- Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Custom Cursor Glow -->
+  <div class="cursor-glow"></div>
+
+  <!-- 3D Background Canvas -->
+  <canvas id="webgl-canvas"></canvas>
+
+  <!-- Cinematic Background Image -->
+  <div class="bg-container">
+    <!-- Using a placeholder Unsplash image for the dark cinematic feel -->
+    <img class="bg-image"
+      src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop"
+      alt="Background">
+    <div class="bg-overlay"></div>
+  </div>
+
+  <!-- Main Content -->
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+          <div class="container">
+            <div class="glass-card hero-card">
+              <span class="badge">Computer Science Student</span>
+              <h1 class="hero-title">Aspiring Developer <br>& Tech Enthusiast</h1>
+              <p class="hero-subtitle">Exploring algorithms, building web applications, and learning new technologies.
+                Currently navigating my academic journey.</p>
+              <div class="hero-cta">
+                <a href="#achievements" class="btn btn-primary">View Achievements</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section-padding" id="about">
+          <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+              <div class="about-text glass-card">
+                <p>I am currently a student navigating my semesters with a strong curiosity for software engineering and
+                  problem-solving.</p>
+                <p>My core interests lie in competitive programming, full-stack web development, and exploring emerging
+                  technologies. I enjoy participating in coding contests and building projects that challenge me to
+                  learn more.</p>
+              </div>
+              <div class="about-stats">
+                <div class="stat-card glass-card">
+                  <h3>1st</h3>
+                  <p>Year Student</p>
+                </div>
+                <div class="stat-card glass-card">
+                  <h3>50+</h3>
+                  <p>Problems Solved</p>
+                </div>
+                <div class="stat-card glass-card">
+                  <h3>2</h3>
+                  <p>Hackathons Attended</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Achievements & Projects Section -->
+        <section class="projects section-padding" id="achievements">
+          <div class="container">
+            <h2 class="section-title">Achievements & Projects</h2>
+            <div class="projects-grid">
+              <!-- Achievement 1 -->
+              <a href="#" class="project-card glass-card">
+                <div class="project-image">
+                  <div class="img-placeholder bg-purple"><img src="./assets/nta.jpeg" height="300" width="400"></div>
+                </div>
+                <div class="project-info">
+                  <h3>JEE Mains</h3>
+                  <p>99.32%ile, 99%+ in both Session1 and Session2</p>
+                </div>
+              </a>
+              <!-- Achievement 2 -->
+              <a href="#" class="project-card glass-card">
+                <div class="project-image">
+                  <div class="img-placeholder bg-blue"><img src="./assets/adv.jpeg" height="250" width="400" ></div>
+                </div>
+                <div class="project-info">
+                  <h3>JEE Advanced</h3>
+                  <p>AIR 7152</p>
+                </div>
+              </a>
+              <!-- Project 1 -->
+              <a href="https://student-tracker-omax.onrender.com/" class="project-card glass-card">
+                <div class="project-image">
+                  <div class="img-placeholder bg-dark"><img src="./assets/logo.jpeg" height="300" width="400"></div>
+                </div>
+                <div class="project-info">
+                  <h3>Student Tracking Website</h3>
+                  <p>Solution for students to help track academics</p>
+                </div>
+              </a>
+              <!-- Project 2
+              <a href="#" class="project-card glass-card">
+                <div class="project-image">
+                  <div class="img-placeholder bg-gradient"></div>
+                </div>
+                <div class="project-info">
+                  <h3>Campus Event Tracker</h3>
+                  <p>Full-stack app used by 500+ students</p>
+                </div>
+              </a> -->
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section-padding" id="contact">
+          <div class="container">
+            <div class="contact-card glass-card">
+              <h2 class="section-title">Let's Connect</h2>
+              <p class="contact-text">Whether you want to collaborate on a project, discuss algorithms, or just say hi,
+                feel free to reach out.</p>
+              <a href="mailto:aadamaftab1126@example.com" class="btn btn-primary btn-large">Reach out to Me! :)</a>
+              <div class="social-links">
+                <a href="https://github.com/AadamAftab" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/aadam-aftab-tamboli-428806217/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://codeforces.com/profile/aadamaftab1126" target="_blank" rel="noopener noreferrer">Codeforces</a>
+                <a href="https://www.instagram.com/aftabaadam/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://leetcode.com/u/1F4ngx0MHe/" target="_blank" rel="noopener noreferrer">Leetcode</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer>
+          <div class="container">
+            <p>&copy; 2026 Developer Portfolio. All rights reserved.</p>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- Using Lenis for smooth scroll to complement GSAP without ScrollSmoother -->
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
